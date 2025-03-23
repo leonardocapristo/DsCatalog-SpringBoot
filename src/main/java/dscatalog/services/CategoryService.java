@@ -34,7 +34,7 @@ public class CategoryService {
 	public CategoryDTO findById(Long id) {
 		Optional<Category> categoryOptinal = repository.findById(id);
 		Category category = categoryOptinal.orElseThrow(() -> new SourceNotFoundException("ID não encontrado"));
-		return new CategoryDTO(category);
+		return new CategoryDTO(category );
 	}
 	
 	

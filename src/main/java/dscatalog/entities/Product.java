@@ -30,8 +30,8 @@ public class Product implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Setter(AccessLevel.NONE)
-	
 	private Long id;
+	
 	private String name;
 	@Column(columnDefinition = "TEXT")
 	private String description;
